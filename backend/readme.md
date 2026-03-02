@@ -65,17 +65,10 @@ backend/
 └── server.js
 
 
-## ⚙️ Setup Instructions
-
-### 1. Clone the repo
-       git clone <repo-url>
-       cd backend
-
-### 2.Install dependencies
-        npm install
 
 
-## create .env
+
+## .env
 
 PORT=5000
 MONGO_URI=mongodb+srv://..............
