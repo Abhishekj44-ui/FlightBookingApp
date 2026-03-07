@@ -1,20 +1,18 @@
 
-import './App.css'
-import Navbar from './components/layout/Navbar'
-import Button from './components/ui/Button'
-import Input from './components/ui/Input'
-
+import "./App.css";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Flights from "./pages/Flights";
+import Home from "./pages/Home";
 function App() {
-  
-
   return (
-    <>
-    <div>
-      <Navbar />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element = {<Home />} />
+        <Route path="/flights" element = {<Flights />} />
 
-    </>
-  )
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

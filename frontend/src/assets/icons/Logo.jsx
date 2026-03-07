@@ -1,15 +1,18 @@
-export const Logo = ({ className = ""}) => {
+const Logo = (props) => {
   return (
     <svg
       viewBox="0 0 50 50"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      {...props}
     >
       <path
         d="M25 0C11.1925 0 0 11.1925 0 25C0 38.8075 11.1925 50 25 50C38.8075 50 50 38.8075 50 25C50 11.1925 38.8075 0 25 0ZM25 45L30 40L32.5 37.5V32.5H27.5V30L25 27.5H17.5V35L22.5 40V44.8275C12.65 43.59 5 35.18 5 25L7.5 27.5H12.5V22.5H17.5L25 15V10H20L17.5 7.5V6.4725C22.3081 4.51328 27.6919 4.51328 32.5 6.4725V10L30 12.5V17.5L32.5 20L40.325 12.175C42.2274 14.4531 43.5989 17.1261 44.34 20H40L35 25V30L37.5 32.5H42.5L43.215 33.215C40.0725 40.1525 33.0975 45 25 45Z"
-        fill="#F7801C"
+        fill="currentColor"
       />
     </svg>
   );
 };
+
+
+export default Logo;
