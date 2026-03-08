@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className="p-6 bg-black  rounded-xl border hover:shadow-lg transition"
+                className="p-6 bg-black  rounded-xl border shadow-black hover:shadow-lg transition"
               >
                 <Icon className="w-10 h-10 mx-auto text-primary mb-4" />
 

@@ -39,7 +39,7 @@ const Testimonials = () => {
           {reviews.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-white p-6 rounded-xl "
             >
               <p className="text-gray-600 mb-6">
                 "{item.review}"

@@ -25,9 +25,9 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">About</li>
-            <li className="hover:text-white cursor-pointer">Careers</li>
-            <li className="hover:text-white cursor-pointer">Blog</li>
+            <li className="hover:text-primary cursor-pointer">About</li>
+            <li className="hover:text-primary cursor-pointer">Careers</li>
+            <li className="hover:text-primary cursor-pointer">Blog</li>
           </ul>
         </div>
 
@@ -38,9 +38,9 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Help Center</li>
-            <li className="hover:text-white cursor-pointer">Contact Us</li>
-            <li className="hover:text-white cursor-pointer">FAQs</li>
+            <li className="hover:text-primary cursor-pointer">Help Center</li>
+            <li className="hover:text-primary cursor-pointer">Contact Us</li>
+            <li className="hover:text-primary cursor-pointer">FAQs</li>
           </ul>
         </div>
 
@@ -51,10 +51,10 @@ const Footer = () => {
           </h3>
 
           <div className="flex gap-4">
-            <Facebook className="cursor-pointer hover:text-white" />
-            <Twitter className="cursor-pointer hover:text-white" />
-            <Instagram className="cursor-pointer hover:text-white" />
-            <Linkedin className="cursor-pointer hover:text-white" />
+            <Facebook className="cursor-pointer hover:text-primary" />
+            <Twitter className="cursor-pointer hover:text-primary" />
+            <Instagram className="cursor-pointer hover:text-primary" />
+            <Linkedin className="cursor-pointer hover:text-primary" />
           </div>
         </div>
 

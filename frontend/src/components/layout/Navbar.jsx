@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Icon from "../ui/Icon";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
   const menuItems = [
     { name: "Home", link: "#" },
-    { name: "Flights", link: "#flights" },
+    //{ name: "Flights", link: "#flights" },
     { name: "Contact", link: "#contact" },
-    { name: "Login", link: "#login" },
+    // { name: "Login", link: "#login" },
   ];
   return (
     <nav className="fixed top-0 left-0 bg-black/60 w-full z-50">
@@ -29,6 +31,16 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
+
+          <p
+            onClick={() => navigate("/flights")}
+            className="hover:text-primary transition cursor-pointer"
+          >
+            Flights
+          </p>
+          <a href="#login" className="hover:text-primary transition">
+            login
+          </a>
         </div>
 
         {/* Mobile Icon */}
@@ -50,6 +62,19 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
+            <p
+              onClick={() => navigate("/flights")}
+              className="hover:text-primary py-3 transition"
+            >
+              Flights
+            </p>
+            <a
+             
+              href="#login"
+              className="hover:text-primary py-3 transition"
+            >
+              login
+            </a>
           </div>
         </div>
       )}
